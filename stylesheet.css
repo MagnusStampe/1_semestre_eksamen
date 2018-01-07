@@ -1,0 +1,319 @@
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #222;
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+iframe {
+    border: none;
+}
+
+/* Text */
+
+h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #FFF;
+
+    margin: 2em 30px 1em 30px;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 1em 30px;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    margin: 1em 30px 0.2em 30px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin: 1em 30px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #FFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Flexbox elements */
+
+.container {
+    display: flex;
+}
+
+.column {
+    width: 100%;
+}
+
+/* Top bar */
+
+#top_bar {
+    background-color: #406acc;
+    padding-top: 1em;
+    padding-bottom: 0;
+}
+
+.here {
+    font-weight: 700;
+}
+
+/* Navigation menu */
+
+nav {
+    display: flex;
+    width: 100vw;
+}
+
+nav a {
+    width: 100%;
+
+    padding: 0.3em;
+    margin: 0;
+    border-width: 0.1em 0.05em;
+    border-color: #000;
+    border-style: solid;
+
+    font-size: 1.3em;
+    text-align: center;
+    background-color: #FFF;
+}
+
+/* Footer */
+
+footer {
+    background-color: #406acc;
+    padding: 1vw;
+    width: 98vw;
+}
+
+footer p {
+    color: #FFF;
+}
+
+.mig {
+    width: 5.8em;
+    height: 5.8em;
+
+    margin: 1em;
+
+    background-image: url(img/mig.jpg);
+    background-size: cover;
+    transform: rotate(90deg);
+    background-position: center;
+}
+
+
+/** Forside **/
+
+#forside {
+    padding: 10vw;
+}
+
+#forside h1 {
+    color: #000;
+    text-align: center;
+}
+
+#forside h2 {
+    margin: 0.3em 0;
+    text-align: center;
+}
+
+#forside div {
+    width: 50vw;
+    height: 50vw;
+
+    max-width: 400px;
+    max-height: 400px;
+
+    margin: 0 auto;
+
+    background-image: url(img/mig.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(90deg);
+}
+
+/** CV **/
+
+#cv p {
+    margin: 1em 30px;
+    max-width: 50vw;
+}
+
+#cv h2 {
+    font-size: 2em;
+}
+
+#cv h3 {
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+#cv h4 {
+    font-style: normal;
+}
+
+#cv h5 {
+    font-size: 1.1em;
+    font-style: italic;
+    font-weight: 400;
+    color: #444;
+
+    margin: 1em 30px 0.5em 30px;
+    ;
+}
+
+/** Portfolio **/
+
+/* Generelt */
+
+#home .start {
+    margin: 1em 30px;
+    padding: 0.5em 1em;
+
+    background-color: #111;
+
+    font-size: 1.5em;
+
+    border-style: solid;
+    border-color: #222 #272727 #272727 #222;
+    border-width: 0.15em;
+}
+
+#afleveringer .container {
+    margin: 0vw 30px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+#afleveringer .container a {
+    height: 1.2em;
+    width: 4em;
+
+    padding: 0.5em;
+
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#afleveringer .container a:nth-child(1) {
+    background-color: #618cff;
+    font-weight: 700;
+}
+
+#afleveringer .container a:nth-child(2) {
+    background-color: #406acc;
+}
+
+#afleveringer .container a:nth-child(3) {
+    background-color: #2048aa;
+}
+
+#afleveringer .container a:nth-child(4) {
+    background-color: #002688;
+}
+
+#afleveringer .tema {
+    padding: 2em 0;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+
+    background-size: cover;
+    background-position: center;
+}
+
+.tema3 iframe {
+    max-width: 500px;
+    max-height: 281px;
+}
+
+.tema4 iframe {
+    width: 300px;
+    height: 531px;
+
+    margin: 0 30px;
+}
+
+#afleveringer object {
+    margin: 10px 30px;
+}
+
+.link {
+    margin: 10px 30px;
+    color: #000;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: #009;
+}
+
+.vis1,
+.luk1,
+.vis2,
+.luk2 {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+/* Temaer */
+
+.tema1 {
+    background-image: url(img/tema1.jpg);
+}
+
+.tema3 {
+    background-image: url(img/tema3.jpg);
+}
+
+.tema2 {
+    background-image: url(img/tema2.jpg);
+}
+
+#afleveringer .tema4 {
+    background-image: url(img/tema4.jpg);
+    border-bottom-width: 0.2em;
+}
+
+
+/* Media queries */
+
+@media screen and (min-width: 570px) {
+    .long {
+        display: block;
+    }
+    .short {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .long {
+        display: none;
+    }
+    .short {
+        display: block;
+    }
+    #afleveringer object {
+        width: 350px;
+    }
+}
