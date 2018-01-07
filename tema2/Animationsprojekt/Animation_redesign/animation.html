@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sex og Samfund</title>
+    <link rel="stylesheet" href="animation.css">
+
+</head>
+
+<body>
+
+    <div id="scene" class="titel">
+
+        <!-- Titelbillede -->
+        <div id="titel"></div>
+        <div id="klik_mobil"></div>
+
+        <!-- Scene 1 -->
+        <div id="cirkel_container" class="cirkel_large">
+            <div id="baggrund1" class="fullscreen">
+
+                <div id="sky1"></div>
+
+                <div id="bobler1" class="bobble bobble_anim_2"></div>
+                <div id="bobler2" class="bobble bobble_anim_1"></div>
+                <div id="bobler3" class="bobble bobble_anim_2"></div>
+                <div id="bobler4" class="bobble bobble_anim_1"></div>
+                <div id="bobler5" class="bobble bobble_anim_1"></div>
+                <div id="bobler6" class="bobble bobble_anim_2"></div>
+                <div id="bobler7" class="bobble bobble_anim_1"></div>
+                <div id="bobler8" class="bobble bobble_anim_2"></div>
+                <div id="bobler9" class="bobble bobble_anim_2"></div>
+                <div id="bobler10" class="bobble bobble_anim_1"></div>
+                <div id="bobler11" class="bobble bobble_anim_1"></div>
+
+                <div id="pige_container" class="pige_ryg_til_container">
+                    <div id="pige_sprite" class=""></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scene 2 -->
+        <div id="baggrund2" class="splitscreen">
+            <div id="hand_container" class="splitscreen">
+                <div id="hand_sprite" class="new_snap"></div>
+            </div>
+        </div>
+
+        <!-- Scene 3 -->
+        <div id="ansigt_container">
+            <div id="ansigt_sprite" class="ansigt_move"></div>
+            <div id="a1" class="ansigt"></div>
+            <div id="a2" class="ansigt"></div>
+            <div id="a3" class="ansigt"></div>
+            <div id="a4" class="ansigt"></div>
+            <div id="a5" class="ansigt"></div>
+            <div id="a6" class="ansigt"></div>
+            <div id="a7" class="ansigt"></div>
+            <div id="a8" class="ansigt"></div>
+            <div id="a9" class="ansigt"></div>
+            <div id="a10" class="ansigt"></div>
+        </div>
+        <div id="sporgsmal">
+            <div id="del_billede"></div>
+            <div id="ja"></div>
+            <div id="nej"></div>
+        </div>
+        <div id="klik_og_del"></div>
+
+        <!-- Scene JA -->
+        <div id="mobil1" class="mobil"></div>
+        <div id="mobil2" class="mobil"></div>
+        <div id="mobil3" class="mobil"></div>
+        <div id="mobil4" class="mobil"></div>
+        <div id="mobil5" class="mobil"></div>
+
+        <!-- Payoff JA -->
+        <div id="payoff1_ja"></div>
+        <div id="payoff2"></div>
+
+        <div id="antal_delinger">
+            <h2>Antal delinger:</h2>
+            <h2 id="delinger"></h2>
+        </div>
+
+        <!-- Scene NEJ -->
+
+        <!-- Payoff NEJ -->
+        <div id="payoff1_nej"></div>
+
+        <!-- Kreditering -->
+        <a href="http://privatsnak.dk">
+            <div id="logo"></div>
+        </a>
+
+    </div>
+
+    <audio id="blitz" src="../lyd/kamera_med_blitz.mp3"></audio>
+    <audio id="mobil_lyd" src="../lyd/mobil-lyd.mp3"></audio>
+    <audio id="timerlyd" src="../lyd/timer_mixdown.mp3"></audio>
+    <audio id="baggrundslyd" src="../lyd/"></audio>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="animation.js"></script>
+</body>
+
+</html>

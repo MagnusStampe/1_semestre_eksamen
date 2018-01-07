@@ -1,0 +1,461 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/*** TAGS ***/
+
+body {
+    margin: 0;
+    font-size: 62.5%;
+    font-family: sans-serif;
+
+}
+
+img {
+    width: 100%;
+}
+
+li {
+    font-size: 1.5em;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding: 2vw;
+}
+
+
+/*** TAGS END ***/
+
+.ikon {
+    background-image: url(img/ikon.svg);
+    background-size: cover;
+
+    width: 30vw;
+    height: 30vw;
+
+    margin: 0 auto;
+}
+
+.video {
+    align-self: center;
+    width: 100vw;
+}
+
+/*****     Text     *****/
+
+h1 {
+    font-size: 5.0em;
+    font-weight: 900;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    /*    text-transform: capitalize;*/
+}
+
+h2 {
+    font-size: 4.2em;
+    font-weight: 700;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 0 30px 0;
+}
+
+h3 {
+    font-size: 3.0em;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    margin: 0 0 30px 0;
+}
+
+h4 {
+    font-size: 2.0em;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+h5 {
+    font-size: 1.6em;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.6em;
+    line-height: 1.5em;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: inherit;
+    color: inherit;
+}
+
+a:hover {}
+
+
+/*****     Diverse     *****/
+
+.topspace {
+    margin-top: 60px;
+}
+
+.img_w100 {
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.img_w90 {
+    width: 90%;
+    margin: 20px 0px;
+}
+
+.img_w80 {
+    width: 80%;
+    margin: 20px 0px;
+}
+
+.img_w70 {
+    width: 70%;
+    margin: 20px 0px;
+}
+
+.img_w60 {
+    width: 60%;
+    margin: 20px 0px;
+}
+
+.img_w50 {
+    width: 50%;
+    margin: 20px 0px;
+}
+
+.img_w40 {
+    width: 40%;
+    margin: 20px 0px;
+}
+
+.img_karakter {
+    width: 400px;
+    margin: 20px;
+}
+
+.img_annoncer {
+    width: 400px;
+    margin: 20px;
+}
+
+.btn1 {
+    background-color: #000;
+    border-radius: 20px;
+
+    padding-top: 26px;
+    padding-right: 40px;
+    padding-bottom: 1px;
+    padding-left: 40px;
+
+    margin-bottom: 30px;
+}
+
+.expanded {
+    background-color: #779799;
+}
+
+/* FARVEKODER
+
+#799FA8 - primær farve
+#AACACC - Sekundær farve
+
+*/
+
+.bg_p {
+    background-color: #799FA8;
+    color: #FFFFFF;
+}
+
+.bg_s {
+    background-color: #AACACC;
+    color: #FFFFFF;
+}
+
+.bg_morkebla {
+    background-color: #577d86;
+}
+
+.bg_3 {
+    background-color: #333;
+    color: #fff;
+}
+
+.bg_4 {
+    background-color: #444;
+    color: #fff;
+}
+
+.bg_5 {
+    background-color: #555;
+    color: #fff;
+}
+
+.bg_6 {
+    background-color: #666;
+    color: #000;
+}
+
+.bg_7 {
+    background-color: #777 color: #000;
+}
+
+.bg_8 {
+    background-color: #888;
+    color: #000;
+}
+
+.bg_9 {
+    background-color: #999;
+    color: #000;
+}
+
+.bg_orange {
+    background-color: #f2912a;
+    color: #fff;
+}
+
+.bg_blaa {
+    background-color: #0084ff;
+    color: #fff;
+}
+
+.bg_gul {
+    background-color: #fff200;
+    color: #000;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    min-height: 100px;
+    width: 100%;
+    text-align: center;
+    padding: 20px 5%;
+    /*    margin: 40px 0px 0px 0px;*/
+}
+
+.holder {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+
+.txtholder {
+    flex-basis: 400px;
+    flex-grow: 1;
+    align-self: flex-start;
+
+    text-align: justify;
+    text-align: left;
+
+    padding: 0px 20px;
+
+}
+
+.kontakt_div {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+/*****     Header     *****/
+
+header {
+    position: fixed;
+    width: 100vw;
+}
+
+header nav {
+    padding: 0.5vw 3vw 0 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 100%);
+    text-align: right;
+}
+
+header nav a {
+    margin: 0.7vw 0.7vw;
+    font-size: 1.5vw;
+}
+
+/*****     Persona *****/
+
+.bjarne {
+    background-image: url(img/bjarne.jpg);
+    width: 50vw;
+    height: 35vw;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+/*****     Titel     *****/
+
+#titel {
+    min-height: 400px;
+    width: 100vw;
+    /*    background-color: black;*/
+    text-align: center;
+    padding: 20px 5%;
+}
+
+.titel h1 {
+    padding-top: 170px;
+    color: #000;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/*****     Spillet     *****/
+
+#spillet h2 {
+    padding-top: 30px;
+}
+
+/*****     Historien     *****/
+
+#historien h2 {
+    /*    padding-top: 30px;*/
+}
+
+/*****     Designproces     *****/
+
+#designproces h2 {
+    /*    padding-top: 30px;*/
+}
+
+
+
+
+/*****     Kontakt     *****/
+
+/* Billeder */
+
+.gruppeimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    min-height: 100px;
+    width: 100vw;
+    /*    background-color: black;*/
+    text-align: center;
+    padding: 20px 0%;
+}
+
+.jonas,
+.gry,
+.frederikfrank,
+.frederik,
+.mia {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    width: 12vw;
+    height: 12vw;
+    border-radius: 1vw;
+}
+
+.jonas {
+    background-image: url(img/jonas.jpg);
+    background-size: 130%;
+}
+
+.gry {
+    background-image: url(img/gry.jpg);
+}
+
+.frederikfrank {
+    background-image: url(img/frederikfrank.jpg);
+}
+
+.frederik {
+    background-image: url(img/frederik.jpg);
+}
+
+.mia {
+    background-image: url(img/mia.jpg);
+}
+
+
+
+/* Navne */
+
+button {
+
+    background-color: #AACACC;
+    width: 30vw;
+    height: 10vw;
+
+    font-size: 4em;
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+}
+
+
+button:hover {
+    color: #eeeeee;
+}
+
+#kontakt {
+    padding: 5vw 0;
+    /*    background-color: grey;*/
+}
+
+.gruppenavne {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    width: 100vw;
+    padding: 20px 0%;
+    margin: 0;
+
+    text-align: center;
+    /*    background-color: black;*/
+    color: #fff;
+}
+
+.grpnavn {
+    width: 12vw;
+}
+
+.grpnavn h4 {
+    font-size: 2.4em;
+    font-weight: 700;
+
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.grpnavn p {
+    font-size: 1.4em;
+    font-weight: 700;
+    text-align: left;
+}

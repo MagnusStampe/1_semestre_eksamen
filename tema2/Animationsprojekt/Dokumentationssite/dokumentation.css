@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------- MENU ---------- */
+
+.dropdown_content ul {
+    list-style-type: none;
+}
+
+.dropdown {
+    position: fixed;
+    top: 0;
+    height: 5vw;
+    width: 100vw;
+    background-color: #101421;
+    z-index: 10;
+}
+
+.dropdown_content li {
+    width: 29.5vw;
+    height: 3.5vw;
+    padding: 0.5vw 1vw;
+}
+
+.dropdown_content li a {
+    color: #f1f1f1;
+    font-size: 2.5vw;
+    text-decoration: none;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.dropdown_content {
+    width: 100vw;
+    height: auto;
+    top: 5vw;
+    background-color: #202532;
+    flex-wrap: wrap;
+    display: none;
+    position: fixed;
+}
+
+.dropdown_content div {
+    height: 19vw;
+    width: 0.3vw;
+
+    border-style: solid;
+    border-width: 1.2vw;
+    border-color: #202532;
+
+    z-index: 100;
+    background-color: #f4912d;
+    align-self: center;
+}
+
+.burger {
+    height: 4vw;
+    width: 4vw;
+    margin: 0.5vw;
+    background-image: url(../img/burger.svg);
+    background-size: cover;
+}
+
+.dropdown:hover .dropdown_content {
+    display: flex;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+header li:hover {
+    background-color: #1f1f1f;
+}
+
+
+/*
+.dropdown div:hover {
+    background-color: white;
+}
+
+.dropdown li:hover {
+    background-color: white;
+}
+*/
+
+/* ########################################
+TAGS [ <tag> ]
+######################################## */
+
+body {
+    background-color: #202532;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    /* Kan slettes når sections har fået indhold */
+    width: 80vw;
+    margin: 5vw auto;
+    padding: 3vw;
+    border-radius: 5vw;
+}
+
+h1 {
+    margin-bottom: 3vw;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* ########################################
+SECTIONS [ #section ]
+######################################## */
+
+#gruppe {
+    margin-top: 10vw;
+    background-color: #E9ECED;
+}
+
+#animation {
+    background-color: #FFFFFF;
+}
+
+#historie {
+    background-color: #E9ECED;
+}
+
+#storyboard_flowchart {
+    background-color: #FFFFFF;
+}
+
+#persona {
+    background-color: white;
+}
+
+#moodboard {
+    background-color: #FFFFFF;
+}
+
+#styletile {
+    background-color: #E9ECED;
+}
+
+#scener_karaktere {
+    background-color: #FFFFFF;
+}
+
+#scener_karaktere img {
+    width: 35vw;
+}
+
+#layoutdiagram {
+    background-color: #E9ECED;
+}
+
+#sekvensdiagram {
+    background-color: #FFFFFF;
+}
+
+
+#assets {
+    background-color: #E9ECED;
+}
+
+#assets img {
+    width: 10vw;
+    overflow: hidden;
+}
+
+#assets img:hover {
+    width: 20vw;
+}
+
+
+
+#assets .sprite img {
+    width: 60vw;
+}
+
+#assets .sprite img:hover {
+    width: 100%;
+}
+
+#assets .baggrund img {
+    width: 30vw;
+}
+
+
+#assets .baggrund img:hover {
+    width: 50vw;
+
+}
+
+#test {
+    background-color: #FFFFFF;
+}
+
+#stand {
+    background-color: #E9ECED;
+}
+
+#trello_backlog {
+    background-color: #FFFFFF;
+}
+
+#burndown {
+    background-color: #E9ECED;
+}
+
+
+#moodboard img {
+    width: 100%;
+    height: 100%;
+}
+
+/* ########################################
+SECTION SPECIFIC CLASSES AND TAGS [ #section .class / #section tag ]
+######################################## */
+
+/* ########################################
+CLASSES [ .class ]
+######################################## */
+
+.p1,
+.p2 {
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #E9ECED;
+    padding: 2vw;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.p1 .text,
+.p2 .text {
+    flex-basis: 375px;
+    flex-grow: 2;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+
+}
+
+
+.p1 .img,
+.p2 .img {
+    flex-basis: 375px;
+    flex-grow: 1;
+    max-width: 30vw;
+
+}
+
+.scener_karaktere {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    max-width: 80vw;
+    height: 100%;
+}
+
+.scener_karaktere img {
+    flex-basis: 300px;
+    align-self: center;
+}
+
+.burndown {
+    background-image: url(../img/burndown.JPG);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 80vw;
+    height: 80vw;
+    transform: rotate(90deg);
+    z-index: 0;
+}
+
+
+/* ########################################
+KEYFRAMES [ @keyframes ]
+######################################## */
