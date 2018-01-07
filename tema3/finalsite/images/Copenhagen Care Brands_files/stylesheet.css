@@ -1,0 +1,146 @@
+********/ * {
+    margin: 0;
+    padding: 0;
+}
+
+/*---------section--------*/
+
+#splash {
+    height: 115vh;
+}
+
+#splash div {
+    width: 70vw;
+    top: 30vh;
+    left: 15vw;
+    position: absolute;
+    align-self: center;
+}
+
+#about {
+    background-color: #3f3f3f;
+}
+
+#brands {
+    background-color: #3f3f3f;
+}
+
+#us {
+    background-color: #3f3f3f;
+}
+
+#vision {
+    background-color: #3f3f3f;
+}
+
+#offer {
+    background-color: #3f3f3f;
+}
+
+#contact {
+    background-color: #3f3f3f;
+}
+
+/*---------flex-----------*/
+
+/*---------parent---------*/
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.column_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.column_content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#vision .sectionwrapper {
+    display: block;
+    text-align: center;
+}
+
+
+/*---------child---------*/
+
+.column {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.column2 {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.column_wide {
+    flex-basis: 100px;
+    flex-grow: 2;
+}
+
+.img {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.txt {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+/*----------------------*/
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1,
+h2,
+h3,
+p {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: dfdfdf;
+}
+
+nav {
+    position: fixed;
+}
+
+img {
+    width: 100%;
+}
+
+#brands img,
+#us img,
+#contact img {
+    width: 20vw;
+}
+
+#us img {
+    width:
+}

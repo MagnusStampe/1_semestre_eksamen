@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    margin: 1vw;
+}
+
+a {
+    font-size: 2em;
+    margin: 1vw;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.storyboard {
+    background-image: URL(storyboard1.jpg);
+    width: 100%;
+}

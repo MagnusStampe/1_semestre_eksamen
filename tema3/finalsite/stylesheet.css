@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-------- MENU ---------- */
+
+header ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #5d6f7d;
+
+}
+
+header li a {
+    display: block;
+    text-align: center;
+    margin: 0 5vw 0 0;
+    color: #f1f1f1;
+    font-size: 0.8em;
+}
+
+nav {
+    padding: 10px 6px;
+}
+
+/* Change the link color to #111 (black) on hover */
+
+header li a:hover {
+    background-color: #f1f1f1;
+}
+
+/*-------- DROPDOWN ---------- */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+/* Style The Dropdown Button */
+
+.dropbtn {
+
+
+    background-color: #5d6f7d;
+    font-size: 16px;
+    cursor: pointer;
+    height: 45px;
+    border: none;
+
+}
+
+.dropdown img {
+    color: #F1F1f1;
+    background-color: #5d6f7d;
+    width: 25px;
+    margin-left: 10.5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height: 45px;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    position: absolute;
+    min-width: 89px;
+    z-index: 1;
+    background-color: #5d6f7d;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+.dropdown:hover .dropbtn {
+    background-color: #5d6f7d;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: #f1f1f1;
+    padding: 10px;
+    width: 89px;
+    display: block;
+    font-family: 'oswald';
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+
+}
+
+
+
+/*--------- NAVIGATION MENU -------*/
+
+nav {
+    background-color: #5d6f7d;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-family: 'Oswald';
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0vw 2vw 0vw 2vw;
+}
+
+nav a {
+    margin: 1vw 5vw 1vw 5vw;
+    font-size: 1.2em;
+    letter-spacing: 0.3vw;
+}
+
+nav a:hover {
+    color: #5d6f7d;
+}
+
+/*------ DROPDOWN CONTAINER -------*/
+
+.dropdown {
+    position: fixed;
+    display: inline-block;
+    width: 100%;
+    top: 0;
+    background-color: #5d6f7d;
+}
+
+.dropdown ul {
+    text-align: left;
+}
+
+
+
+/*--------- SECTION --------*/
+
+#splash {
+    height: 115vh;
+    width: 100%;
+}
+
+#splash div {
+    width: 40vw;
+    top: 1.5vw;
+    left: 30vw;
+    position: absolute;
+}
+
+
+#about {
+    background-color: #3f3f3f;
+    padding-bottom: 5vw
+}
+
+#brands {
+    background-color: rgba(93, 111, 125, 0.9);
+}
+
+#brands img {
+    filter: opacity(0%);
+}
+
+#brands .column_content2 p {
+    display: none;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 1.5vw;
+    flex-basis: 100px;
+    flex-grow: 1;
+    min-width: 180px;
+    max-width: 70vw;
+}
+
+/*** BRANDS ***/
+
+/* Generel class for all brands */
+
+.brand {
+    background-size: cover;
+    transition: background 0.4s linear;
+}
+
+/* Baberians Copenhagen */
+
+.brand1 {
+    background-image: url(images/barberians.png);
+}
+
+.brand1:hover {
+    background-image: url(images/barberians_txt.png);
+}
+
+/* Recipe for men */
+
+.brand2 {
+    background-image: url(images/recipe_for_men.png);
+}
+
+.brand2:hover {
+    background-image: url(images/recipe_for_men_txt.png);
+}
+
+/* SASCO */
+
+.brand3 {
+    background-image: url(images/sasco.png);
+}
+
+.brand3:hover {
+    background-image: url(images/sasco_txt.png);
+}
+
+/* Raw Naturals */
+
+.brand4 {
+    background-image: url(images/raw_naturals.png);
+}
+
+.brand4:hover {
+    background-image: url(images/raw_naturals_txt.png);
+}
+
+/* BKD */
+
+.brand5 {
+    background-image: url(images/bkd.png);
+}
+
+.brand5:hover {
+    background-image: url(images/bkd_txt.png);
+}
+
+/* -417 */
+
+.brand6 {
+    background-image: url(images/-417.png);
+}
+
+.brand6:hover {
+    background-image: url(images/-417_txt.png);
+}
+
+/* SeeSee */
+
+.brand7 {
+    background-image: url(images/seesee.png);
+}
+
+.brand7:hover {
+    background-image: url(images/seesee_txt.png);
+}
+
+/* Man Cave */
+
+.brand8 {
+    background-image: url(images/man_cave.png);
+}
+
+.brand8:hover {
+    background-image: url(images/man_cave_txt.png);
+}
+
+#us {
+    background-color: #9eb1b8;
+}
+
+#vision {
+    background-color: #f1f1f1;
+}
+
+#vision h1 {
+    color: #5d6f7d;
+}
+
+#vision p {
+    color: #5d6f7d;
+}
+
+#offer {
+    background-color: rgba(93, 111, 125, 0.9);
+}
+
+#offer h1 {
+    font-size: 3em;
+}
+
+#offer li,
+#contact li {
+    padding: 1vw 0vw;
+}
+
+#contact {
+    background-color: #3f3f3f;
+}
+
+/*---------FLEX-----------*/
+
+/*---------PARENT---------*/
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+#about .sectionwrapper {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 7vw 0;
+}
+
+.sectionwrapper2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.column_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.column_content2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#vision .column {
+    display: block;
+    text-align: center;
+}
+
+#vision {
+    padding-bottom: 5vw;
+}
+
+/*---------CHILD---------*/
+
+.column {
+    flex-basis: 100px;
+    flex-grow: 1;
+    padding: 2vw;
+    width: 100%;
+}
+
+#about .column {
+    text-align: center;
+    padding: 5vw 15vw 5vw 15vw;
+}
+
+.column_wide {
+    flex-basis: 100px;
+    flex-grow: 2;
+}
+
+.img {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+.txt {
+    flex-basis: 100px;
+    flex-grow: 1;
+}
+
+/*----------------------*/
+
+body {
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*---------FONTS--------*/
+
+h1,
+h2,
+h3,
+li,
+ul,
+p {
+    color: white;
+}
+
+p,
+li {
+    font-family: 'Raleway';
+}
+
+h1,
+h3 {
+    font-family: 'Oswald';
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+p {
+    font-family: 'Raleway';
+}
+
+a:hover {
+    color: #888888;
+}
+
+
+header {
+    height: 3vw;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+section {
+    padding: 5vw 5vw 2vw 5vw;
+    margin: 0 7vw 0 7vw;
+}
+
+#splash {
+    padding: 0;
+    margin: 0;
+}
+
+
+img {
+    width: 100%;
+}
+
+#us img,
+#contact img {
+    width: 20vw;
+}
+
+#brands .column {
+    padding: 0;
+}
+
+#us .column {
+    max-width: 50vw;
+    flex-basis: 200px;
+}
+
+#contact {
+    margin-bottom: 7vw;
+}
+
+/*---------VIDEO---------*/
+
+.video iframe {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+    border: none;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 Aspect Ratio */
+    padding-top: 25px;
+}
+
+/*---------FOOTER---------*/
+
+footer {
+    top: 0px;
+    padding: 8px;
+    width: 100%;
+    color: #f1f1f1;
+    background-color: #3f3f3f;
+    text-align: center;
+    font-family: 'Raleway';
+}
+
+/*-------- Media Queries ---------- */
+
+@media all and (max-width: 828px) {
+    nav ul {
+        display: none;
+    }
+    nav select {
+        display: inline-block;
+    }
+}
+
+@media all and (min-width: 828px) {
+    .dropdown {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 514px) {
+    #brands .column_content2 p {
+        display: block;
+    }
+    section {
+        margin: 0;
+    }
+    #about .column {
+        text-align: center;
+        padding: 5vw 8vw;
+    }
+    #us .column {
+        max-width: 80vw;
+        flex-basis: 200px;
+    }
+
+    #us h1 {
+        margin: 5vw 7vw;
+    }
+
+    #brands .wrapper {
+        margin: 0 10vw;
+        ;
+    }
+    #brands h1 {
+        margin: 5vw 10vw;
+    }
+    #brands p {
+        margin: 3vw 0 5vw 0;
+    }
+    #splash div {
+        width: 60vw;
+        top: 38vw;
+        left: 20vw;
+        position: absolute;
+    }
+    #vision {
+        padding-bottom: 10vw;
+    }
+
+    body {
+        background-image: url(images/background_small.jpg);
+    }
+    #us img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 670px) and (min-width: 514px) {
+    #splash div {
+        width: 50vw;
+        top: 20vw;
+        left: 25vw;
+        position: absolute;
+    }
+    body {
+        background-image: url(images/background_medium.jpg);
+    }
+
+}
+
+
+@media screen and (max-width: 870px) and (min-width: 670px) {
+    #splash div {
+        width: 50vw;
+        top: 10vw;
+        left: 25vw;
+        position: absolute;
+    }
+}
+
+@media screen and (max-width: 1050px) and (min-width: 870px) {
+    #splash div {
+        width: 50vw;
+        top: 0vw;
+        left: 25vw;
+        position: absolute;
+    }
+}
+
+
+@media screen and (min-width: 1050px) {
+    body {
+        background-image: url(images/background_large.jpg);
+    }
+
+}
+
+
+@media screen and (min-width: 1050px) {
+    body {
+        background-image: url(images/background_large.jpg);
+    }
+}
+
+/*--------bagrunds_størrelse--------*/

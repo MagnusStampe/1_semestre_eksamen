@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    padding: 10vw 10vw;
+    background-color: #f7f7f7;
+}
+
+section {
+    padding: 2vw 5vw;
+    margin: 5vw 0;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+img,
+iframe {
+    width: 100%;
+}
+
+h1 {
+    margin: 1vw 0;
+}
+
+a {
+    font-size: 1.2em;
+    margin: 4vw 0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.storyboard {
+    background-image: URL(storyboard1.jpg);
+    width: 100%;
+}
