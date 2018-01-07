@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold</title>
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <button class="reset_btn">Start forfra</button>
+
+    <!-- Visual part -->
+
+    <div id="baggrund">
+
+        <div id="titel" class="hide"></div>
+        <div id="kreditering" class="hide"></div>
+
+        <button id="walk_in_btn" class="hide">Start</button>
+
+        <button id="stone_btn" class="hide"></button>
+        <button id="foot_btn" class="hide"></button>
+
+        <p id="wait_txt" class="hide">I should just save energy and wait...</p>
+        <p id="try_txt" class="hide">I should try to light a fire with these stones...</p>
+        <p id="smash_txt" class="hide">(Click on him to smash the stones together! If you are too slow he might not make it!)</p>
+        <p id="too_cold_txt" class="hide">Too... Cold...</p>
+
+        <div id="sne_baggrund"></div>
+
+        <div id="forgrund"></div>
+        <div id="sne_forgrund"></div>
+
+        <div id="mellemgrund"></div>
+        <div id="sne_mellemgrund"></div>
+
+        <div id="protagonist_container" class="start_pos">
+            <div id="protagonist_sprite" class="walk"></div>
+        </div>
+        <div id="redder_container" class="start_pos">
+            <div id="redder_sprite" class="walk"></div>
+        </div>
+
+        <div id="fire" class="wood"></div>
+
+    </div>
+
+    <!-- Sound files -->
+
+    <p>break.mp3</p>
+    <audio id="break" src="sound/break.mp3" controls>Your browser does not support this audio!</audio>
+    <p>oh_no.mp3</p>
+    <audio id="oh_no" src="sound/oh_no.mp3" controls>Your browser does not support this audio!</audio>
+    <p>over_here.mp3</p>
+    <audio id="over_here" src="sound/over_here.mp3" controls>Your browser does not support this audio!</audio>
+    <p>stone.mp3</p>
+    <audio id="stone" src="sound/stone.mp3" controls>Your browser does not support this audio!</audio>
+    <p>storm.mp3</p>
+    <audio id="storm" src="sound/storm.mp3" controls loop>Your browser does not support this audio!</audio>
+
+    <!-- Java Script -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

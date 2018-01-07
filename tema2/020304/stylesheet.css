@@ -1,0 +1,538 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**********
+Titelbillede og krediteringsbillede
+**********/
+
+#titel {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/titel.jpg);
+    background-size: cover;
+    position: absolute;
+    z-index: 100;
+}
+
+#kreditering {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/kreditering.jpg);
+    background-size: cover;
+    position: absolute;
+    z-index: 110;
+}
+
+/**********
+Container
+**********/
+
+#baggrund {
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(img/scenarie_baggrund.jpg);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/**********
+Sne
+**********/
+
+#sne_baggrund {
+    width: 150%;
+    height: 200%;
+    left: -20%;
+    top: -40%;
+    background-image: url(img/sne_baggrund.png);
+    background-size: 60%;
+    position: absolute;
+    transform: rotate(40deg);
+    z-index: 2;
+    animation-name: sne_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+}
+
+#sne_mellemgrund {
+    width: 150%;
+    height: 200%;
+    left: -20%;
+    top: -40%;
+    background-image: url(img/sne_mellemgrund.png);
+    background-size: 50%;
+    position: absolute;
+    transform: rotate(40deg);
+    z-index: 3;
+    animation-name: sne_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+}
+
+#sne_forgrund {
+    width: 150%;
+    height: 200%;
+    left: -20%;
+    top: -40%;
+    background-image: url(img/sne_forgrund.png);
+    background-size: 50%;
+    position: absolute;
+    transform: rotate(40deg);
+    z-index: 20;
+    animation-name: sne_kf;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+}
+
+/**********
+Forgrund og mellemgrund
+**********/
+
+#forgrund {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/scenarie_forgrund.svg);
+    background-size: cover;
+    position: absolute;
+    z-index: 19;
+}
+
+#mellemgrund {
+    width: 100%;
+    height: 100%;
+    background-image: url(img/scenarie_mellemgrund.png);
+    background-size: cover;
+    position: absolute;
+    z-index: 4;
+}
+
+/**********
+ID til karaktere, karakter container og andre elementer
+**********/
+
+#protagonist_container {
+    position: absolute;
+    z-index: 50;
+}
+
+#protagonist_sprite {
+    width: 15vw;
+    height: 20vw;
+
+    background-image: url(img/protagonist_sprite.svg);
+    background-size: 400% 800%;
+}
+
+#redder_container {
+    position: absolute;
+    z-index: 50;
+}
+
+#redder_sprite {
+    width: 15vw;
+    height: 20vw;
+
+    background-image: url(img/redder_sprite.svg);
+    background-size: 400% 500%;
+}
+
+#walk_in_btn {
+    top: 70%;
+    left: 40%;
+
+    width: 20%;
+    height: 10%;
+
+    position: absolute;
+    z-index: 150;
+
+    font-size: 1.5em;
+    font-family: 'Finger Paint', 'cursive';
+
+    border: none;
+    border-radius: 1vw;
+
+    background-color: #FFFFFF;
+}
+
+#fire {
+    width: 10vw;
+    height: 10vw;
+    left: 68%;
+    top: 60%;
+
+    position: absolute;
+    z-index: 9;
+
+    background-image: url(img/fire_sprite.svg);
+    background-size: 300% 200%;
+}
+
+#stone_btn {
+    width: 11vw;
+    height: 11vw;
+
+    top: 30%;
+    left: 25%;
+
+    position: absolute;
+    z-index: 90;
+
+    background-image: url(img/stone.svg);
+    background-size: cover;
+    background-color: transparent;
+
+    border: none;
+}
+
+#foot_btn {
+    width: 11vw;
+    height: 11vw;
+
+    top: 30%;
+    right: 25%;
+
+    position: absolute;
+    z-index: 90;
+
+    background-image: url(img/foot.svg);
+    background-size: cover;
+    background-color: transparent;
+
+    border: none;
+}
+
+#try_txt {
+    position: absolute;
+    z-index: 50;
+
+    margin: 5vw;
+
+    font-size: 1.5em;
+    font-family: 'Finger Paint', 'cursive';
+    color: white;
+}
+
+#wait_txt {
+    position: absolute;
+    z-index: 50;
+
+    margin: 5vw;
+
+    font-size: 1.5em;
+    font-family: 'Finger Paint', 'cursive';
+    color: white;
+}
+
+#smash_txt {
+    position: absolute;
+    z-index: 50;
+
+    margin: 5vw;
+
+    font-size: 1.5em;
+    font-family: 'Finger Paint', 'cursive';
+    color: white;
+}
+
+#too_cold_txt {
+    position: absolute;
+    z-index: 50;
+
+    margin: 5vw;
+
+    font-size: 1.5em;
+    font-family: 'Finger Paint', 'cursive';
+    color: white;
+}
+
+/**********
+Classes
+**********/
+
+/*** Classes til containere ***/
+
+#protagonist_container.walk_right {
+    animation-name: protagonist_walk_right_kf;
+    animation-iteration-count: 1;
+    animation-duration: 7s;
+    animation-fill-mode: forwards;
+}
+
+#redder_container.walk_right {
+    animation-name: redder_walk_right_kf;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/*** Classes til sprites ***/
+
+/** Fælles **/
+
+/* Gå animation */
+
+.start_pos {
+    left: -15vw;
+}
+
+.walk {
+    animation-name: walk_kf;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+}
+
+/* Trist */
+
+.sad {
+    background-position: 0% -200%;
+}
+
+/* Glad */
+
+.happy {
+    background-position: 0% -300%;
+}
+
+/** Protagonist **/
+
+/* Tændstik animation */
+
+.light_pos {
+    left: 60%;
+    top: 42%;
+}
+
+.light {
+    animation-name: light_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+}
+
+/* Foot animation */
+
+.no_light {
+    animation-name: no_light_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+}
+
+/* wait animation */
+
+.wait {
+    animation-name: wait_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+    animation-fill-mode: forwards;
+}
+
+.stay_wait {
+    background-position: -300% -400%;
+}
+
+/* die animation */
+
+.die {
+    animation-name: die_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+}
+
+.stay_die {
+    background-position: -300% -500%;
+}
+
+.smash {
+    animation-name: smash_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(4);
+}
+
+.stay_try {
+    background-position: 0% -600%;
+}
+
+/** Hjælper / redder **/
+
+.wave {
+    animation-name: wave_kf;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(4);
+}
+
+/* kneel animation */
+
+.kneel {
+    animation-name: kneel_kf;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: steps(3);
+    animation-fill-mode: forwards;
+}
+
+.stay_kneel {
+    background-position: -200% -400%;
+}
+
+/** Andre elementer **/
+
+.hide {
+    display: none;
+}
+
+.fire {
+    animation-name: fire_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(3);
+}
+
+.wood {
+    background-position: 0 -100%;
+}
+
+/**********
+Keygframes / animationer
+**********/
+
+/*** Walk right animationer ***/
+
+@keyframes protagonist_walk_right_kf {
+    0% {
+        left: -100%;
+    }
+    40% {
+        top: 40%;
+    }
+    55% {
+        top: 37%;
+    }
+    100% {
+        left: 60%;
+        top: 42%;
+    }
+}
+
+@keyframes redder_walk_right_kf {
+    0% {
+        top: 40%;
+        left: -100%;
+    }
+    50% {
+        top: 42%;
+    }
+
+    100% {
+        left: 22%;
+        top: 39%;
+    }
+}
+
+/*** Walk cycles ***/
+
+@keyframes walk_kf {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: -400% 0%;
+    }
+}
+
+/*** Specifikke animationer for karaktere eller andet ***/
+
+@keyframes light_kf {
+    0% {
+        background-position: 0% -100%;
+    }
+    100% {
+        background-position: -400% -100%;
+    }
+}
+
+@keyframes no_light_kf {
+    0% {
+        background-position: 0% -700%;
+    }
+    100% {
+        background-position: -400% -700%;
+    }
+}
+
+@keyframes wait_kf {
+    0% {
+        background-position: 0% -400%;
+    }
+    100% {
+        background-position: -400% -400%;
+    }
+}
+
+@keyframes die_kf {
+    0% {
+        background-position: 0% -500%;
+    }
+    100% {
+        background-position: -400% -500%;
+    }
+}
+
+@keyframes smash_kf {
+    0% {
+        background-position: 0% -600%;
+    }
+    100% {
+        background-position: -400% -600%;
+    }
+}
+
+@keyframes wave_kf {
+    0% {
+        background-position: 0% -99%;
+    }
+    100% {
+        background-position: -400% -99%;
+    }
+}
+
+@keyframes kneel_kf {
+    0% {
+        background-position: 0% -400%;
+    }
+    100% {
+        background-position: -300% -400%;
+    }
+}
+
+@keyframes fire_kf {
+    0% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 300% 0;
+    }
+}
+
+@keyframes sne_kf {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 200%;
+    }
+}

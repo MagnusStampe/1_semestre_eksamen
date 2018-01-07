@@ -1,0 +1,226 @@
+/**********
+ General
+*********/
+
+
+/* Text elements */
+
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+    color: black;
+    font-family: sans-serif;
+}
+
+h2 {
+    color: darkblue;
+    font-size: 30px;
+}
+
+h4 {
+    margin-left: 15px;
+}
+
+a {
+    font-size: 30px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    background-color: RGBA(150, 150, 200, 0.5);
+    padding: 5px;
+    margin: 10px;
+    margin-left: 0;
+}
+
+
+/* Flex elements */
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.column_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.top {
+    flex-basis: 300px;
+}
+
+.bottom {
+    flex-basis: 300px;
+}
+
+.column_narrow {
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+
+.column_wide {
+    flex-basis: 300px;
+    flex-grow: 7;
+}
+
+.content {
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+
+
+/* Other visual elements */
+
+section {
+    background-color: lightgrey;
+    margin: 2%;
+    padding: 3%;
+}
+
+.header {
+    width: 100%;
+    background-color: RGB(150, 150, 200);
+    padding: 20px;
+}
+
+.footer {
+    margin: 20px;
+    font-size: 30px;
+}
+
+.splash {
+    width: 100%;
+}
+
+img {
+    width: 300px;
+}
+
+
+/**********
+ Sections
+**********/
+
+
+/* Splash */
+
+
+/* Om */
+
+
+/* Eksempler */
+
+#eksempler .column {
+    background-color: RGBA(150, 150, 200, 0.5);
+    margin: 10px;
+}
+
+#eksempler h3,
+h4 {
+    margin-left: 5px;
+}
+
+#eksempler p {
+    background-color: transparent;
+}
+
+#eksempler img {
+    width: 250px;
+    margin: 3vw;
+}
+
+
+/* Typografi */
+
+
+/* Komposition og farver */
+
+.colors {
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+
+.color {
+    width: 70%;
+    height: 15%;
+}
+
+
+/* White */
+
+.color1 {
+    background-color: #ffffff;
+    border-top-left-radius: 3vw;
+    border-top-right-radius: 3vw;
+}
+
+
+/* Grey */
+
+.color2 {
+    background-color: #909090;
+}
+
+
+/* Light brown */
+
+.color3 {
+    background-color: #e9c8a9;
+}
+
+
+/* Dark brown */
+
+.color4 {
+    background-color: #baa28a;
+}
+
+
+/* Black */
+
+.color5 {
+    background-color: #000000;
+}
+
+
+/* Blue */
+
+.color6 {
+    background-color: RGB(150, 150, 200);
+    border-bottom-left-radius: 3vw;
+    border-bottom-right-radius: 3vw;
+}
+
+#komposition_farver .content {
+    flex-grow: 3;
+}
+
+#komposition_farver .column_content {
+    flex-direction: row;
+}
+
+
+/* Links */
+
+#links a {
+    font-size: 20px;
+    color: darkblue;
+}
+
+
+/* Ekstra */
